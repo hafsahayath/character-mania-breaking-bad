@@ -1,0 +1,34 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.character-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 300ms;
+}
+
+.character-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 70px rgba(0, 0, 0, 0.25);
+}
+
+.link-style-alive {
+    text-decoration: none;
+    color: #5cb85c;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-style-dead {
+    text-decoration: none;
+    color: #d9534f;
+    font-family: 'Roboto', sans-serif;
+}

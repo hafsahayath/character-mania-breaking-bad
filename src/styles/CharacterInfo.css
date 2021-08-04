@@ -1,0 +1,44 @@
+.main-intro img {
+    width: 400px;
+}
+
+.main-intro {
+    padding: 30px 30px 10px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset 0 5px 30px rgba(0,0,0,0.5);
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navigate-link {
+    align-self: flex-start;
+    margin-top: 20px; 
+}
+
+.occupation-list {
+    padding: 5px;
+}
