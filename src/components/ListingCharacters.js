@@ -23,8 +23,10 @@ const ListingCharacters = (props) => {
         characters.map(ele=>{
           return (
             <div className="character-box" key={ele.char_id}>
-                <img style={{width:'100%', height: '50vh'}} src={ele.img} alt={ele.name} /> <br />
-                <Link className={`${ele.status === "Alive"?'link-style-alive':'link-style-dead'}`} to={`characters/${ele.char_id}`}><strong>{ele.name}</strong></Link>
+                <Link to={`characters/${ele.char_id}`}>
+                  <img style={{width:'100%', height: '50vh'}} src={ele.img} alt={ele.name} />
+                </Link> <br />
+                <p className={`${ele.status === "Alive"?'link-style-alive':'link-style-dead'}`}><strong>{ele.name}</strong></p>
             </div>
           )
       })}

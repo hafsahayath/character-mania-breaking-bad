@@ -16,7 +16,7 @@ const CharacterInfo = ({match}) => {
       .catch((err)=>{
         alert(err.message)
       })
-  },[])
+  },[id])
   
   const calculateAge = (dob) => {
     if(dob==="Unknown"){
